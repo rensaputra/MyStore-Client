@@ -30,7 +30,7 @@ const ProductCard = ({ product }: { product: Product }) => {
     <div className="bg-white rounded-xl shadow-lg w-full h-full min-h-[624px] px-5">
       <Image
         className="w-full h-full rounded-t-xl max-h-96 object-contain"
-        src={`${process.env.NEXT_PUBLIC_BASE_URL}${product.image}`}
+        src={`${product.image}`}
         width={0}
         height={0}
         sizes="100vw"
