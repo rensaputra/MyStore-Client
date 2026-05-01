@@ -29,7 +29,7 @@ const ProductCard = ({ product }: { product: Product }) => {
   return (
     <div className="bg-white rounded-xl shadow-lg w-full h-full min-h-[624px] px-5">
       <Image
-        className="w-full h-full rounded-t-xl max-h-96 object-contain"
+        className="w-full h-full rounded-t-xl max-h-96 object-cover mb-2"
         src={`${product.image}`}
         width={0}
         height={0}

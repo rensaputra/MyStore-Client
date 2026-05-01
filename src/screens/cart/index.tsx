@@ -49,7 +49,7 @@ const CartScreen = () => {
                 className="w-full bg-white shadow-md rounded-xl grid grid-cols-[auto_1fr]"
               >
                 <Image
-                  src={`${process.env.NEXT_PUBLIC_BASE_URL}${item.image}`}
+                  src={`${item.image}`}
                   alt={item.name}
                   width={0}
                   height={0}
