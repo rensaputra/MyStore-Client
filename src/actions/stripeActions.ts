@@ -45,7 +45,7 @@ export async function createCheckoutSession(
       customerId: customerData?.id,
     },
     mode: "payment",
-    return_url: `http://localhost:3000/payment-status?session_id={CHECKOUT_SESSION_ID}`,
+    return_url: `${process.env.CLIENT_BASE_URL}/payment-status?session_id={CHECKOUT_SESSION_ID}`,
   });
 
   return { clientSecret: checkoutSession.client_secret };
